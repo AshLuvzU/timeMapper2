@@ -17,7 +17,7 @@ L.Icon.Default.mergeOptions({
 // the plain array it returns, so swapping the data format later is easy.
 // ---------------------------------------------------------------------------
 async function parseEvents() {
-  const response = await fetch('./data/events.xml')
+  const response = await fetch('/events.xml')
   const text = await response.text()
   const xml = new DOMParser().parseFromString(text, 'application/xml')
 
