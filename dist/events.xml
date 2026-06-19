@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+
+  <event>
+    <title>Storming of the Bastille</title>
+    <date>1789-07-14</date>
+    <description>Parisian crowds stormed the Bastille fortress, marking the start of the French Revolution.</description>
+    <lat>48.8533</lat>
+    <lon>2.3692</lon>
+    <media>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Prise_de_la_Bastille.jpg/640px-Prise_de_la_Bastille.jpg</media>
+  </event>
+
+  <event>
+    <title>Declaration of the Rights of Man</title>
+    <date>1789-08-26</date>
+    <description>The National Constituent Assembly adopted this foundational document of human rights.</description>
+    <lat>48.8566</lat>
+    <lon>2.3522</lon>
+  </event>
+
+  <event>
+    <title>Execution of Louis XVI</title>
+    <date>1793-01-21</date>
+    <description>King Louis XVI was guillotined at the Place de la Révolution in Paris.</description>
+    <lat>48.8656</lat>
+    <lon>2.3212</lon>
+  </event>
+
+  <event>
+    <title>Napoleon crowned Emperor</title>
+    <date>1804-12-02</date>
+    <description>Napoleon Bonaparte crowned himself Emperor of the French at Notre-Dame de Paris.</description>
+    <lat>48.8530</lat>
+    <lon>2.3499</lon>
+    <media>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/David_-_Napoleon_at_the_Saint-Bernard_Pass%2C_20_May_1800.jpg/480px-David_-_Napoleon_at_the_Saint-Bernard_Pass%2C_20_May_1800.jpg</media>
+  </event>
+
+</events>
