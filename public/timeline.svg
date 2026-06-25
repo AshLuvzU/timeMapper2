@@ -1,4 +1,436 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:ash="http://ashluvzu.com" width="25000" viewBox="0 0 25000 400"><desc> HI! I'm the latest date: 1804</desc><desc>And I'm the earliest data: -55</desc>--&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:ash="http://ashluvzu.com"
+     width="25000"
+     viewBox="0 0 25000 400">
+   <desc> HI! I'm the latest date: 1804</desc>
+   <desc>And I'm the earliest date: -55</desc>--&gt;
 
 
-   <g transform="translate(560, 0)"><rect width="18590" height="220" x="-550" y="10" rx="20" ry="20" fill="blue"/><g class="datePoint"><circle r="20" cx="-310" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="-550" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="17890" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="18040" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="17890" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="17930" cy="90" fill="red"/></g></g></svg>
+   <g transform="translate(560, 0)">
+      <rect width="18590"
+            height="220"
+            x="-550"
+            y="10"
+            rx="20"
+            ry="20"
+            fill="blue"/>
+      <g class="datePoint">
+         <circle r="20" cx="-310" cy="90" fill="red"/>
+      </g>
+      <g class="datePoint">
+         <circle r="20" cx="-550" cy="90" fill="red"/>
+      </g>
+      <g class="datePoint">
+         <circle r="20" cx="17890" cy="90" fill="red"/>
+      </g>
+      <g class="datePoint">
+         <circle r="20" cx="18040" cy="90" fill="red"/>
+      </g>
+      <g class="datePoint">
+         <circle r="20" cx="17890" cy="90" fill="red"/>
+      </g>
+      <g class="datePoint">
+         <circle r="20" cx="17930" cy="90" fill="red"/>
+      </g>
+      <line x1="-500"
+            y1="10"
+            x2="-500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="-500" y="0">-50</text>
+      <line x1="0"
+            y1="10"
+            x2="0"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="0" y="0">0</text>
+      <line x1="0"
+            y1="10"
+            x2="0"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="0" y="0">0</text>
+      <line x1="500"
+            y1="10"
+            x2="500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="500" y="0">50</text>
+      <line x1="1000"
+            y1="10"
+            x2="1000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="1000" y="0">100</text>
+      <line x1="1000"
+            y1="10"
+            x2="1000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="1000" y="0">100</text>
+      <line x1="1500"
+            y1="10"
+            x2="1500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="1500" y="0">150</text>
+      <line x1="2000"
+            y1="10"
+            x2="2000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="2000" y="0">200</text>
+      <line x1="2000"
+            y1="10"
+            x2="2000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="2000" y="0">200</text>
+      <line x1="2500"
+            y1="10"
+            x2="2500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="2500" y="0">250</text>
+      <line x1="3000"
+            y1="10"
+            x2="3000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="3000" y="0">300</text>
+      <line x1="3000"
+            y1="10"
+            x2="3000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="3000" y="0">300</text>
+      <line x1="3500"
+            y1="10"
+            x2="3500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="3500" y="0">350</text>
+      <line x1="4000"
+            y1="10"
+            x2="4000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="4000" y="0">400</text>
+      <line x1="4000"
+            y1="10"
+            x2="4000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="4000" y="0">400</text>
+      <line x1="4500"
+            y1="10"
+            x2="4500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="4500" y="0">450</text>
+      <line x1="5000"
+            y1="10"
+            x2="5000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="5000" y="0">500</text>
+      <line x1="5000"
+            y1="10"
+            x2="5000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="5000" y="0">500</text>
+      <line x1="5500"
+            y1="10"
+            x2="5500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="5500" y="0">550</text>
+      <line x1="6000"
+            y1="10"
+            x2="6000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="6000" y="0">600</text>
+      <line x1="6000"
+            y1="10"
+            x2="6000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="6000" y="0">600</text>
+      <line x1="6500"
+            y1="10"
+            x2="6500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="6500" y="0">650</text>
+      <line x1="7000"
+            y1="10"
+            x2="7000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="7000" y="0">700</text>
+      <line x1="7000"
+            y1="10"
+            x2="7000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="7000" y="0">700</text>
+      <line x1="7500"
+            y1="10"
+            x2="7500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="7500" y="0">750</text>
+      <line x1="8000"
+            y1="10"
+            x2="8000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="8000" y="0">800</text>
+      <line x1="8000"
+            y1="10"
+            x2="8000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="8000" y="0">800</text>
+      <line x1="8500"
+            y1="10"
+            x2="8500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="8500" y="0">850</text>
+      <line x1="9000"
+            y1="10"
+            x2="9000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="9000" y="0">900</text>
+      <line x1="9000"
+            y1="10"
+            x2="9000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="9000" y="0">900</text>
+      <line x1="9500"
+            y1="10"
+            x2="9500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="9500" y="0">950</text>
+      <line x1="10000"
+            y1="10"
+            x2="10000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="10000" y="0">1000</text>
+      <line x1="10000"
+            y1="10"
+            x2="10000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="10000" y="0">1000</text>
+      <line x1="10500"
+            y1="10"
+            x2="10500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="10500" y="0">1050</text>
+      <line x1="11000"
+            y1="10"
+            x2="11000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="11000" y="0">1100</text>
+      <line x1="11000"
+            y1="10"
+            x2="11000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="11000" y="0">1100</text>
+      <line x1="11500"
+            y1="10"
+            x2="11500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="11500" y="0">1150</text>
+      <line x1="12000"
+            y1="10"
+            x2="12000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="12000" y="0">1200</text>
+      <line x1="12000"
+            y1="10"
+            x2="12000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="12000" y="0">1200</text>
+      <line x1="12500"
+            y1="10"
+            x2="12500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="12500" y="0">1250</text>
+      <line x1="13000"
+            y1="10"
+            x2="13000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="13000" y="0">1300</text>
+      <line x1="13000"
+            y1="10"
+            x2="13000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="13000" y="0">1300</text>
+      <line x1="13500"
+            y1="10"
+            x2="13500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="13500" y="0">1350</text>
+      <line x1="14000"
+            y1="10"
+            x2="14000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="14000" y="0">1400</text>
+      <line x1="14000"
+            y1="10"
+            x2="14000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="14000" y="0">1400</text>
+      <line x1="14500"
+            y1="10"
+            x2="14500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="14500" y="0">1450</text>
+      <line x1="15000"
+            y1="10"
+            x2="15000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="15000" y="0">1500</text>
+      <line x1="15000"
+            y1="10"
+            x2="15000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="15000" y="0">1500</text>
+      <line x1="15500"
+            y1="10"
+            x2="15500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="15500" y="0">1550</text>
+      <line x1="16000"
+            y1="10"
+            x2="16000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="16000" y="0">1600</text>
+      <line x1="16000"
+            y1="10"
+            x2="16000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="16000" y="0">1600</text>
+      <line x1="16500"
+            y1="10"
+            x2="16500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="16500" y="0">1650</text>
+      <line x1="17000"
+            y1="10"
+            x2="17000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="17000" y="0">1700</text>
+      <line x1="17000"
+            y1="10"
+            x2="17000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="17000" y="0">1700</text>
+      <line x1="17500"
+            y1="10"
+            x2="17500"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="17500" y="0">1750</text>
+      <line x1="18000"
+            y1="10"
+            x2="18000"
+            y2="220"
+            stroke="green"
+            stroke-width="10"/>
+      <text x="18000" y="0">1800</text>
+      <line x1="18000"
+            y1="10"
+            x2="18000"
+            y2="220"
+            stroke="yellow"
+            stroke-width="2"/>
+      <text x="18000" y="0">1800</text>
+   </g>
+</svg>

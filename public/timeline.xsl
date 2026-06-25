@@ -8,7 +8,13 @@
     exclude-result-prefixes="xs math xd"
     version="3.0">
     
-    <xsl:function name="ash:dateConverter">
+    <!-- ebb: Let's pretty-print the output. The xsl:output line helps for that. -->
+    <xsl:output method="xml" indent="yes"/>   
+    
+  <!-- ebb: Setting aside for now.
+      We can make this a working function in the ashluvzu namespace now that we figured out the logic. 
+      But we can develop it later. 
+      <xsl:function name="ash:dateConverter">
         <xsl:param name="dateInfo"/>
         <xsl:value-of select="$dateInfo"/>
         
@@ -18,12 +24,10 @@
              <xsl:value-of select="'-' || child::year ! number()"/>
          </xsl:for-each>
         </xsl:variable> 
-        
-      
-             
-        
-        
-    </xsl:function>
+    </xsl:function>-->
+    
+    
+    
     <xsl:template match="/">
 
         <xsl:variable name="x-spacer" select="10"/>
@@ -52,7 +56,7 @@
             
           <desc> HI! I'm the latest date: <xsl:value-of select="$latestDate"/></desc>
             
-            <desc>And I'm the earliest data: <xsl:value-of select="$earliestDate"/>  </desc>-->
+            <desc>And I'm the earliest date: <xsl:value-of select="$earliestDate"/>  </desc>-->
 
 
    <g transform="translate({abs($earliestDate) * $x-spacer + 10}, 0)">
@@ -62,12 +66,46 @@
             
          
          
-         <!-- ebb: This outputs every single date when you're ready for it.-->
+         <!-- ebb: This outputs every single date.-->
             <xsl:for-each select="$allConvertedDates">
                 <g class="datePoint">
                     <circle r="20" cx="{current() * $x-spacer}" cy="90" fill="red" />
                     </g>
             </xsl:for-each>
+       
+          <xsl:for-each select="xs:integer($earliestDate) to xs:integer($latestDate)">
+              
+              <xsl:if test="current() mod 100 = 0">
+                  <!-- ebb: I'm taking each integer, and if it's divisible by 100 without a remainder, or
+                  mod="0", then I'm letting us output a line. This should give us vertical black lines 
+                  for every century. "mod" means modulo. and you can use it to output if a number is evenly divisible by
+                  2 or 5 or 10 or whatever, its mod is 0.-->
+                  
+                  <line x1="{current() * $x-spacer}" y1="10" 
+                        x2="{current() * $x-spacer}" y2="220" 
+                        stroke="green" stroke-width="10"/>
+                  <!-- ebb: Here's an SVG text element to output the current value. -->
+                  <text x="{current() * $x-spacer}" y="0"><xsl:value-of select="current()"/></text>
+              </xsl:if>
+              
+              <!-- Here's one that makes 50 year increments, Same as above, just mod 50 = 0-->
+              
+              <xsl:if test="current() mod 50 = 0">
+                  <!-- ebb: I'm taking each integer, and if it's divisible by 100 without a remainder, or
+                  mod="0", then I'm letting us output a line. This should give us vertical black lines 
+                  for every century. "mod" means modulo. and you can use it to output if a number is evenly divisible by
+                  2 or 5 or 10 or whatever, its mod is 0.-->
+                  
+                  <line x1="{current() * $x-spacer}" y1="10" 
+                      x2="{current() * $x-spacer}" y2="220" 
+                      stroke="yellow" stroke-width="2"/>
+                  <!-- ebb: Here's an SVG text element to output the current value. -->
+                  <text x="{current() * $x-spacer}" y="0"><xsl:value-of select="current()"/></text>
+              </xsl:if>
+      
+              
+          </xsl:for-each>
+       
             
    </g> 
         </svg>
