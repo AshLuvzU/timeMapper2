@@ -3,4 +3,4 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
       <div class="event-title">${e.title}</div>
       <div class="event-desc">${e.description}</div>
       ${e.media?`<img class="event-media" src="${e.media}" alt="${e.title}" />`:``}
-    `,i.addEventListener(`click`,()=>{t.setView([e.lat,e.lon],14),_(r)}),n.appendChild(i)})}function _(e){document.querySelectorAll(`.event-card`).forEach(e=>{e.classList.remove(`active`)});let t=document.querySelector(`.event-card[data-index="${e}"]`);t&&(t.classList.add(`active`),t.scrollIntoView({behavior:`smooth`,inline:`center`,block:`nearest`}))}var ee=await m();g(ee,h(ee));
+    `,i.addEventListener(`click`,()=>{t.setView([e.lat,e.lon],14),_(r)}),n.appendChild(i)})}function _(e){document.querySelectorAll(`.event-card`).forEach(e=>{e.classList.remove(`active`)});let t=document.querySelector(`.event-card[data-index="${e}"]`);t&&(t.classList.add(`active`),t.scrollIntoView({behavior:`smooth`,inline:`center`,block:`nearest`}))}var ee=await m();ee.sort((e,t)=>e.astronomicalYear-t.astronomicalYear),g(ee,h(ee));
