@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:ash="http://ashluvzu.com" width="25000" viewBox="0 0 25000 400"><desc> HI! I'm the latest date: 1804</desc><desc>And I'm the earliest data: -55</desc>--&gt;
+
+
+   <g transform="translate(560, 0)"><rect width="18590" height="220" x="-550" y="10" rx="20" ry="20" fill="blue"/><g class="datePoint"><circle r="20" cx="-310" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="-550" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="17890" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="18040" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="17890" cy="90" fill="red"/></g><g class="datePoint"><circle r="20" cx="17930" cy="90" fill="red"/></g></g></svg>

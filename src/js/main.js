@@ -12,6 +12,7 @@ L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
   shadowUrl: markerShadow,
 })
+
 // ---------------------------------------------------------------------------
 // getChild()
 // Helper: finds a direct child element by tag name.
@@ -27,6 +28,7 @@ function getChild(node, tag) {
   console.log(`getChild(${tag}):`, result)
   return result
 }
+
 // ---------------------------------------------------------------------------
 // parseDate()
 // Reads a <date> node and returns a structured object.
@@ -51,7 +53,7 @@ function parseDate(dateNode) {
 // ---------------------------------------------------------------------------
 function toAstronomicalYear(parsedDate) {
   if (parsedDate.era === 'BC') {
-    return -(parsedDate.year - 1)
+    return -(parsedDate.year)
   } else {
     return parsedDate.year
   }
@@ -176,6 +178,7 @@ function highlightCard(index) {
     active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
   }
 }
+
 // ---------------------------------------------------------------------------
 // Entry point
 // ---------------------------------------------------------------------------
