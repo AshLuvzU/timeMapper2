@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This is a simple template that people will use to fill out their event info for BabyTimeMapper!-->
 <!--The month, day, and era sections are completely optional, if these areas of info are not available to you then dont worry about filling them out, you can just remove them-->
+<!--Events do not need to be in chronological order they will be sorted with a JS function-->
 <events>
  
   <event>

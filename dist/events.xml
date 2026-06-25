@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <events>
- 
-  <event>
-    <title>Julius Caesar invades Britain</title>
-    <date>
-      <year>55</year>
-      <era>BC</era>
-    </date>
-    <description>Julius Caesar led the first Roman expedition to Britain, landing on the Kent coast.</description>
-    <lat>51.1789</lat>
-    <lon>1.1713</lon>
-  </event>
- 
-  <event>
+
+  <event> 
     <title>Battle of Actium</title>
     <date>
       <year>31</year>
@@ -39,32 +28,6 @@
   </event>
  
   <event>
-    <title>Declaration of the Rights of Man</title>
-    <date>
-      <year>1789</year>
-      <month>08</month>
-      <day>26</day>
-      <era>AD</era>
-    </date>
-    <description>The National Constituent Assembly adopted this foundational document of human rights.</description>
-    <lat>48.8566</lat>
-    <lon>2.3522</lon>
-  </event>
- 
-  <event>
-    <title>Execution of Louis XVI</title>
-    <date>
-      <year>1793</year>
-      <month>01</month>
-      <day>21</day>
-      <era>AD</era>
-    </date>
-    <description>King Louis XVI was guillotined at the Place de la Révolution in Paris.</description>
-    <lat>48.8656</lat>
-    <lon>2.3212</lon>
-  </event>
- 
-  <event>
     <title>Napoleon crowned Emperor</title>
     <date>
       <year>1804</year>
@@ -78,4 +41,41 @@
     <media>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/David_-_Napoleon_at_the_Saint-Bernard_Pass%2C_20_May_1800.jpg/480px-David_-_Napoleon_at_the_Saint-Bernard_Pass%2C_20_May_1800.jpg</media>
   </event>
   
-  </events> 
+  <event>
+    <title>Declaration of the Rights of Man</title>
+    <date>
+      <year>1789</year>
+      <month>08</month>
+      <day>26</day>
+      <era>AD</era>
+    </date>
+    <description>The National Constituent Assembly adopted this foundational document of human rights.</description>
+    <lat>48.8566</lat>
+    <lon>2.3522</lon>
+  </event>
+
+<event>
+    <title>Julius Caesar invades Britain</title>
+    <date>
+      <year>55</year>
+      <era>BC</era>
+    </date>
+    <description>Julius Caesar led the first Roman expedition to Britain, landing on the Kent coast.</description>
+    <lat>51.1789</lat>
+    <lon>1.1713</lon>
+  </event>
+
+  <event>
+    <title>Execution of Louis XVI</title>
+    <date>
+      <year>1793</year>
+      <month>01</month>
+      <day>21</day>
+      <era>AD</era>
+    </date>
+    <description>King Louis XVI was guillotined at the Place de la Révolution in Paris.</description>
+    <lat>48.8656</lat>
+    <lon>2.3212</lon>
+  </event>
+
+  </events>

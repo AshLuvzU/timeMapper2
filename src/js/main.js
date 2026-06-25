@@ -105,7 +105,7 @@ console.log('first node type:', nodes[0].nodeType, 'tag:', nodes[0].tagName)
     }
   })
 }
- 
+
 // ---------------------------------------------------------------------------
 // buildMap()
 // Initialises a Leaflet map and adds one marker per event.
@@ -175,11 +175,10 @@ function highlightCard(index) {
     active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
   }
 }
- 
 // ---------------------------------------------------------------------------
 // Entry point
 // ---------------------------------------------------------------------------
 const events = await parseEvents()
+events.sort((a, b) => a.astronomicalYear - b.astronomicalYear);
 const map = buildMap(events)
 buildTimeline(events, map)
- 
