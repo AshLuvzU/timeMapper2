@@ -37,7 +37,7 @@ body {
   position: absolute;
   inset: 0;
   border: 50px solid transparent;
-  border-image: url("../../images/scalloped.png") 31 round;
+  border-image: url(../../public/images/scalloped.png) 31 round;
   pointer-events: none;
   z-index: 1000;
 }
@@ -54,7 +54,7 @@ body {
   height: 160px;
   padding: 12px 16px;
   background: #ecece8;
-  background-image: url(../../images/paper.png);
+  background-image: url(../../public/images/paper.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
