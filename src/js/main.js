@@ -120,7 +120,7 @@ function buildMap(events, onSelect) {
   }).addTo(map)
 
   var pinIcon = L.icon({
-    iconUrl: '/images/pin.png',
+    iconUrl: './images/pin.png',
     iconSize:   [50, 60],
     iconAnchor: [25, 60],
     popupAnchor: [0, -60]
