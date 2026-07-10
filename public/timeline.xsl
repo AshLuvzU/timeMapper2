@@ -60,7 +60,7 @@
 
 
    <g transform="translate({abs($earliestDate) * $x-spacer + 10}, 0)">
-       <rect width="{($latestDate - $earliestDate) * $x-spacer}" height="220" x="{$earliestDate * $x-spacer}" y="10" rx="20" ry="20" fill="blue"/>
+       <rect width="{($latestDate - $earliestDate) * $x-spacer}" height="220" x="{$earliestDate * $x-spacer}" y="10" rx="20" ry="20" fill="#985AB7"/>
        
        
             
@@ -82,8 +82,8 @@
                   2 or 5 or 10 or whatever, its mod is 0.-->
                   
                   <line x1="{current() * $x-spacer}" y1="10" 
-                        x2="{current() * $x-spacer}" y2="220" 
-                        stroke="green" stroke-width="10"/>
+                        x2="{current() * $x-spacer}" y2="200" 
+                        stroke="white" stroke-width="15"/>
                   <!-- ebb: Here's an SVG text element to output the current value. -->
                   <text x="{current() * $x-spacer}" y="0"><xsl:value-of select="current()"/></text>
               </xsl:if>
@@ -97,8 +97,34 @@
                   2 or 5 or 10 or whatever, its mod is 0.-->
                   
                   <line x1="{current() * $x-spacer}" y1="10" 
-                      x2="{current() * $x-spacer}" y2="220" 
-                      stroke="yellow" stroke-width="2"/>
+                      x2="{current() * $x-spacer}" y2="150" 
+                      stroke="white" stroke-width="10" stroke-length=""/>
+                  <!-- ebb: Here's an SVG text element to output the current value. -->
+                  <text x="{current() * $x-spacer}" y="0"><xsl:value-of select="current()"/></text>
+              </xsl:if>
+              
+              <xsl:if test="current() mod 10 = 0">
+                  <!-- ebb: I'm taking each integer, and if it's divisible by 100 without a remainder, or
+                  mod="0", then I'm letting us output a line. This should give us vertical black lines 
+                  for every century. "mod" means modulo. and you can use it to output if a number is evenly divisible by
+                  2 or 5 or 10 or whatever, its mod is 0.-->
+                  
+                  <line x1="{current() * $x-spacer}" y1="10" 
+                      x2="{current() * $x-spacer}" y2="100" 
+                      stroke="white" stroke-width="5"/>
+                  <!-- ebb: Here's an SVG text element to output the current value. -->
+                  <text x="{current() * $x-spacer}" y="0"><xsl:value-of select="current()"/></text>
+              </xsl:if>
+              
+              <xsl:if test="current() mod 5 = 0">
+                  <!-- ebb: I'm taking each integer, and if it's divisible by 100 without a remainder, or
+                  mod="0", then I'm letting us output a line. This should give us vertical black lines 
+                  for every century. "mod" means modulo. and you can use it to output if a number is evenly divisible by
+                  2 or 5 or 10 or whatever, its mod is 0.-->
+                  
+                  <line x1="{current() * $x-spacer}" y1="10" 
+                      x2="{current() * $x-spacer}" y2="50" 
+                      stroke="white" stroke-width="2"/>
                   <!-- ebb: Here's an SVG text element to output the current value. -->
                   <text x="{current() * $x-spacer}" y="0"><xsl:value-of select="current()"/></text>
               </xsl:if>
