@@ -216,8 +216,9 @@ function buildTimelineSVG(events, onSelect) {
       line.style.filter = 'drop-shadow(3px 3px 5px rgba(2, 102, 47, 0.25))'
       g.appendChild(line)
       const text = document.createElementNS(svgNS, 'text')
-      text.setAttribute('x', x); text.setAttribute('y', rulerY - 2)
-      text.setAttribute('fill', '#222222'); text.setAttribute('font-size', 18); text.setAttribute('style', 'font-weight: 900;')
+      text.setAttribute('x', x); text.setAttribute('y', rulerY + 210)
+      text.setAttribute('fill', '#ffffff'); text.setAttribute('font-size', 18); text.setAttribute('style', 'font-weight: 900;')
+      text.setAttribute('text-anchor', 'middle')
       text.textContent = year
       g.appendChild(text)
     } else if (isHalfCentury) {
@@ -228,8 +229,9 @@ function buildTimelineSVG(events, onSelect) {
       line.style.filter = 'drop-shadow(3px 3px 5px rgba(2, 102, 47, 0.25))'
       g.appendChild(line)
       const text = document.createElementNS(svgNS, 'text')
-      text.setAttribute('x', x); text.setAttribute('y', rulerY - 1)
-      text.setAttribute('fill', '#222222'); text.setAttribute('font-size', 15); text.setAttribute('style', 'font-weight: 700;')
+      text.setAttribute('x', x); text.setAttribute('y', rulerY + 157)
+      text.setAttribute('fill', '#ffffff'); text.setAttribute('font-size', 15); text.setAttribute('style', 'font-weight: 700;')
+      text.setAttribute('text-anchor', 'middle')
       text.textContent = year
       g.appendChild(text)
     } else if (isDecade) {
@@ -240,8 +242,9 @@ function buildTimelineSVG(events, onSelect) {
       line.style.filter = 'drop-shadow(3px 3px 5px rgba(2, 102, 47, 0.25))'
       g.appendChild(line)
       const text = document.createElementNS(svgNS, 'text')
-      text.setAttribute('x', x); text.setAttribute('y', rulerY - 2)
-      text.setAttribute('fill', '#222222'); text.setAttribute('font-size', 13); text.setAttribute('style', 'font-weight: 500;')
+      text.setAttribute('x', x); text.setAttribute('y', rulerY + 106)
+      text.setAttribute('fill', '#ffffff'); text.setAttribute('font-size', 13); text.setAttribute('style', 'font-weight: 500;')
+      text.setAttribute('text-anchor', 'middle')
       text.textContent = year
       g.appendChild(text)
     } else if (isHalfDecade) {
