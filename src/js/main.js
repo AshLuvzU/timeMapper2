@@ -149,6 +149,37 @@ function buildCard(event) {
     <div class="card-desc">${event.description}</div>
     ${event.media ? `<img class="card-media" src="${event.media}" alt="${event.title}" />` : ''}
   `
+
+  const screenWidth = window.innerWidth
+  const svgHeight = 160
+  const svgWidth = screenWidth - 47
+
+  const svgNS = "http://www.w3.org/2000/svg"
+
+  const svg = document.createElementNS(svgNS, "svg")
+  svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`)
+  svg.setAttribute('width', svgWidth)
+  svg.setAttribute('height', svgHeight)
+  svg.style.flexShrink = 0
+
+  const line = document.createElementNS(svgNS, "line")
+  line.setAttribute('x1', 10)
+  line.setAttribute('y1', 0)
+  line.setAttribute('x2', 10)
+  line.setAttribute('y2', svgHeight)
+  line.setAttribute('stroke', '#ff0000')
+  line.setAttribute('stroke-width', 10)
+
+  const text = document.createElementNS(svgNS, "text")
+  text.setAttribute('x', 25)
+  text.setAttribute('y', 40)
+  text.setAttribute('fill', '#4c00ff')
+  text.setAttribute('font-size', 40)
+  text.textContent = `${event.displayDate}`
+
+  svg.appendChild(text)
+  svg.appendChild(line)
+  panel.prepend(svg)
 }
 
 // ---------------------------------------------------------------------------
