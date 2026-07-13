@@ -6,7 +6,13 @@
  
   <event>
     <title></title>
-    <date>
+    <date type="start">
+      <year></year>
+      <month></month> 
+      <day></day>
+      <era></era>
+    </date>
+    <date type="end">
       <year></year>
       <month></month> 
       <day></day>

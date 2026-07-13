@@ -52,7 +52,6 @@ body {
 
 #card-panel {
   height: 160px;
-  padding: 12px 16px;
   background: #ecece8;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,45 +63,6 @@ body {
   gap: 4px;
   flex-shrink: 0;
   font-family: "BrownCookies"
-}
-
-.card-date {
-  font-size: 35px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: #e70000;
-  margin-top: -4px;
-  margin-left: 20px;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #0e12ff;
-  text-decoration: line-through;
-  text-decoration-thickness: 25px;
-  text-decoration-color: #0ec7ff6b;
-  margin-left: 18px;
-  margin-top: -6px;
-  
-}
-
-.card-desc {
-  font-size: 15px;
-  color: #2c2a2c;
-  line-height: 1.5;
-  margin-left: 18px;
-  margin-top: -2px;
-}
-
-.card-media {
-  max-height: 80px;
-  width: auto;
-  border-radius: 4px;
-  margin-top: 4px;
-  object-fit: cover;
 }
 
 /* -------------------------------------------------------------------------
