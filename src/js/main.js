@@ -78,6 +78,18 @@ function formatDate({ year, month, day, era }) {
   return parts.join(' ')
 }
  
+function formatDateEnd({ year, month, day, era }) {
+  const monthNames = [
+    'Jan','Feb','Mar','Apr','May','Jun',
+    'Jul','Aug','Sep','Oct','Nov','Dec'
+  ]
+  const parts = []
+  if (day)   parts.push(parseInt(day))
+  if (month) parts.push(monthNames[parseInt(month) - 1])
+  parts.push(year)
+  if (era === 'BC') parts.push('BC')
+  return parts.join(' ')
+}
 // ---------------------------------------------------------------------------
 // parseEvents()
 // Fetches public/events.xml and returns a plain JS array of event objects.
@@ -107,6 +119,7 @@ async function parseEvents() {
       astronomicalYear:    toAstronomicalYear(startDate),
       astronomicalYearEnd: endDate ? toAstronomicalYear(endDate) : null,
       displayDate:         formatDate(startDate),
+      displayDateEnd: endDate ? formatDate(endDate) : "", 
       description:         getChild(node, 'description')?.textContent.trim(),
       lat:                 parseFloat(getChild(node, 'lat')?.textContent),
       lon:                 parseFloat(getChild(node, 'lon')?.textContent),
@@ -204,7 +217,7 @@ function buildCard(event, index, events, onSelect) {
   const date = document.createElementNS(svgNS, "text")
   date.setAttribute('x', 40); date.setAttribute('y', 35)
   date.setAttribute('fill', '#ff0000'); date.setAttribute('font-size', 40)
-  date.textContent = `${event.displayDate}`
+  date.textContent = `${event.displayDate} - ${event.displayDateEnd}`
   svg.appendChild(date)
  
   const title = document.createElementNS(svgNS, "text")
