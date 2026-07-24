@@ -18,7 +18,6 @@ body {
 
 /* -------------------------------------------------------------------------
    Map panel — takes up most of the vertical space
-   Preserves your .map-frame wrapper and scalloped border overlay
 ------------------------------------------------------------------------- */
 .map-frame {
   position: relative;
@@ -37,7 +36,7 @@ body {
   position: absolute;
   inset: 0;
   border: 50px solid transparent;
-  border-image: url(../../public/images/scalloped.png) 31 round;
+  border-image: url(/images/scalloped.png) 31 round;
   pointer-events: none;
   z-index: 1000;
 }
@@ -56,44 +55,60 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  border-top: 1px solid #a39b29;
+  border-top: 1px solid #a0a0a0;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 4px;
   flex-shrink: 0;
-  font-family: "BrownCookies"
+  font-family: "BrownCookies";
 }
 
 /* -------------------------------------------------------------------------
-   Timeline ruler — horizontally scrollable SVG strip at the bottom
+   Timeline container — fixed label panel + scrollable ruler side by side
 ------------------------------------------------------------------------- */
-#timeline-ruler {
+#timeline-container {
+  display: flex;
+  flex-direction: row;
   height: 280px;
+  flex-shrink: 0;
+}
+
+/* Fixed left panel — track labels and divider lines, does not scroll */
+#timeline-fixed {
+  flex-shrink: 0;
+  width: 200px;
+  height: 280px;
+  background: #ecece800;
+  z-index: 1;
+}
+
+/* Scrollable ruler — tick marks and event spans scroll horizontally */
+#timeline-ruler {
+  flex: 1;
   overflow-x: auto;
   overflow-y: hidden;
-  background: #f1dbba;
-  border-top: 1px solid #111;
-  flex-shrink: 0;
+  height: 280px;
 }
 
 #timeline-ruler::-webkit-scrollbar {
   height: 28px;
+  background: transparent !important;
 }
 #timeline-ruler::-webkit-scrollbar-track {
-  background: #fff2de;;
+  background: transparent !important;
 }
 #timeline-ruler::-webkit-scrollbar-thumb {
   background: #f3abee;
-  border:#b46eab70 solid 1px;
+  border: #b46eab70 solid 2px;
   border-radius: 2px;
 }
 
-/* Event dots on the SVG ruler */
-.event-dot {
+/* Event spans on the SVG ruler */
+.event-span {
   transition: fill 0.2s;
 }
 
-.event-dot:hover {
-  fill: #7a7a7a ;
+.event-span:hover {
+  fill: #b604ada1;
 }

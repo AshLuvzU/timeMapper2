@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BabyTimemapper</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/marker.png">
   </head>
   <body>
     <div class="map-frame">
       <div id="map"></div>
     </div>
     <div id="card-panel"></div>
-    <div id="timeline-ruler"></div>
+    <div id="timeline-container">
+  <svg id="timeline-fixed"></svg>
+  <div id="timeline-ruler"></div>
+</div>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

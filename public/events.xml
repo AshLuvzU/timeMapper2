@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--This is a simple template that people will use to fill out their event info for BabyTimeMapper!-->
-<!--The month, day, and era sections are completely optional, if these areas of info are not available to you then dont worry about filling them out, you can just remove them-->
-<!--Events do not need to be in chronological order they will be sorted with a JS function-->
+<!--This is an example xml filled with random events, feel free to copy and paste your own events over these ones from the template!-->
 <events>
- 
+ <track type="1" name="early">
   <event>
     <title>Julius Caesar invades Britain</title>
     <date type="start">
@@ -18,7 +16,7 @@
     <lat>51.1789</lat>
     <lon>1.1713</lon>
   </event>
- 
+
   <event>
     <title>Battle of Actium</title>
     <date type="start">
@@ -35,7 +33,9 @@
     <lat>38.9419</lat>
     <lon>20.7400</lon>
   </event>
+  </track>
  
+ <track type="2" name="mid">
   <event>
     <title>Storming of the Bastille</title>
     <date type="start">
@@ -81,7 +81,9 @@
     <lat>48.8656</lat>
     <lon>2.3212</lon>
   </event>
- 
+ </track>
+
+<track type="3" name="late">
   <event>
     <title>Napoleon crowned Emperor</title>
     <date type="start">
@@ -97,5 +99,5 @@
     <lon>2.3499</lon>
     <media>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/David_-_Napoleon_at_the_Saint-Bernard_Pass%2C_20_May_1800.jpg/480px-David_-_Napoleon_at_the_Saint-Bernard_Pass%2C_20_May_1800.jpg</media>
   </event>
- 
+ </track>
 </events>
